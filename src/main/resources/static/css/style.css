@@ -1,0 +1,88 @@
+table {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 180px;
+    height: 180px;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+table .empty{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+table .\31{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+table .\32{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+table .\33{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+table .\34{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: cyan;
+}
+
+table .\35{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+table .\36{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+}
+
+table .\37{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+}
+
+table .\38{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+}
+
+table .\39{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.color{
+    width: 20px;
+    height: 20px;
+}
+
+

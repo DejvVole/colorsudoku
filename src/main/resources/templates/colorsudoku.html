@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Color Sudoku</h1>
+
+    <span th:if="not ${@colorSudokuController.difficultySet}">
+        <div id="difficulty" style="display: block">
+            <a href="/colorsudoku/difficulty?diff=20">Easy</a>
+            <a href="/colorsudoku/difficulty?diff=5">Medium</a>
+            <a href="/colorsudoku/difficulty?diff=0">Hard</a>
+            <a href="/colorsudoku/difficulty?diff=50">Training</a>
+        </div>
+    </span>
+
+
+    <a class="new-game" href="/colorsudoku/new">New Game</a>
+
+    <span th:if="${@colorSudokuController.difficultySet}">
+        <div th:utext="${@colorSudokuController.htmlField}"/>
+    </span>
+
+    <div id="colorMenu" style="display:none; position: absolute; top: 0; left: 0">
+        <a href="/colorsudoku/value?value=1" onclick="hideDiv()" style="background-color: red" class="color red 1"> </a>
+        <a href="/colorsudoku/value?value=2" onclick="hideDiv()" style="background-color: yellow" class="color yellow 2"></a>
+        <a href="/colorsudoku/value?value=3" onclick="hideDiv()" style="background-color: green" class="color green 3"></a>
+        <a href="/colorsudoku/value?value=4" onclick="hideDiv()" style="background-color: cyan" class="color cyan 4"></a>
+        <a href="/colorsudoku/value?value=5" onclick="hideDiv()" style="background-color: blue" class="color blue 5"></a>
+        <a href="/colorsudoku/value?value=6" onclick="hideDiv()" style="background-color: orange" class="color orange 6"></a>
+        <a href="/colorsudoku/value?value=7" onclick="hideDiv()" style="background-color: purple" class="color purple 7"></a>
+        <a href="/colorsudoku/value?value=8" onclick="hideDiv()" style="background-color: gray" class="color white 8"></a>
+        <a href="/colorsudoku/value?value=9" onclick="hideDiv()" style="background-color: black" class="color black 9"></a>
+    </div>
+</body>
+
+<script>
+
+    const menu = document.getElementById('colorMenu');
+    function showDiv(event) {
+
+        sessionStorage.setItem('clicked', true);
+
+        menu.style.display = "flex";
+        menu.style.left = sessionStorage.getItem('posX') + "px";
+        menu.style.top = sessionStorage.getItem('posY') + "px";
+
+        sessionStorage.setItem('posX', event.clientX);
+        sessionStorage.setItem('posY', event.clientY);
+
+    }
+
+    function hideDiv() {
+        document.getElementById('colorMenu').style.display = "none";
+        sessionStorage.removeItem('clicked');
+    }
+
+    window.onload = function () {
+        var data = sessionStorage.getItem('clicked');
+
+        if (data == 'true') {
+            showDiv();
+        }
+    };
+</script>
+</html>

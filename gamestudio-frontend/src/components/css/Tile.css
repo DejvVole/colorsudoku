@@ -1,0 +1,93 @@
+table {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 180px;
+    height: 180px;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+table .\31 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+table .\32 {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+table .\33 {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+table .\34 {
+    width: 20px;
+    height: 20px;
+    background-color: cyan;
+}
+
+table .\35 {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+table .\36 {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+}
+
+table .\37 {
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+}
+
+table .\38 {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+}
+
+table .\39 {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+table .to_guess {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+table .wrong_guess {
+    width: 20px;
+    height: 20px;
+    background-color: darkred;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: darkred;
+    }
+    100% {
+        background-color: white;
+    }
+}

@@ -1,0 +1,100 @@
+.from{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+h1{
+    letter-spacing: 3px;
+}
+
+h3{
+    margin-top: 5%;
+    letter-spacing: 3px;
+}
+
+input{
+    width: 25%;
+
+    font-size: 16px;
+}
+
+.username-input{
+    background-color: #f7f7f7;
+
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+
+    transition: 200ms;
+}
+
+.username-input:focus{
+    border-bottom: 3px solid black;
+    transition: 200ms;
+}
+
+.username-input::placeholder,
+.password-input::placeholder{
+    font-family: 'Canter', sans-serif;
+    letter-spacing: 2px;
+}
+
+.password-input{
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+
+    background-color: #f7f7f7;
+
+    transition: 200ms;
+}
+
+.password-input:focus{
+    border-bottom: 3px solid black;
+    transition: 200ms;
+}
+
+.submit-button{
+    font-family: 'Canter', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-top: 5%;
+    padding: 5px 10px 5px 10px;
+
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+
+    background-color: #f7f7f7;
+
+    transition: .3s;
+}
+
+.submit-button:hover{
+    background-color: black;
+    color: white;
+
+    transition: .3s;
+}
+
+.dont-have-account{
+    display: inline-block;
+
+    margin-bottom: 50px;
+
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: black;
+
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+
+

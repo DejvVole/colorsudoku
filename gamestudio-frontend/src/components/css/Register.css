@@ -1,0 +1,44 @@
+.error{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 5px;
+
+    width: 250px;
+
+    border: 1px solid red;
+    border-left: 3px solid red;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+    background-color: rgba(255, 0, 0, 0.4);
+
+    animation: showErr 0s 5s forwards;
+    animation-duration: 1500ms;
+}
+
+.errors{
+    position: fixed;
+    bottom: 5px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@keyframes showErr {
+    0%{
+        opacity: 1;
+
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+    }
+}

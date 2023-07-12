@@ -1,0 +1,229 @@
+@import url('https://fonts.cdnfonts.com/css/canter');
+
+.app-main{
+    margin: 10% 25% 0 25%;
+
+    font-family: 'Canter', sans-serif;
+}
+
+.link{
+    color: black;
+}
+
+.link-black{
+    color: white;
+}
+
+.app-nav{
+    position: fixed;
+    top: 0;
+    width: 90%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2% 5% 2% 8%;
+
+    transition: .5s;
+
+    z-index: 2;
+}
+
+.app-nav-black{
+    background-color: black;
+
+    padding: 1% 5% 1% 8%;
+
+    transition: .5s;
+    z-index: 1;
+}
+
+.app-nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.app-nav-lef-link{
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-left: 15%;
+    text-decoration: none;
+    font-family: 'Canter', sans-serif;
+    letter-spacing: 3px;
+}
+
+.login-link{
+   font-size: 24px;
+   font-weight: bold;
+
+   text-decoration: none;
+   font-family: 'Canter', sans-serif;
+   letter-spacing: 3px;
+ }
+
+.login-page,
+.register-page{
+  text-align: center;
+}
+
+.home-page{
+    font-family: 'Canter', sans-serif;
+    font-weight: bold;
+
+    text-decoration: none;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+/* hover efekt na linkoch */
+
+.link::after,
+.link-black::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+
+    margin-top: 3px;
+}
+
+.link-black::after{
+    background: white;
+}
+
+.link:hover::after,
+.link-black:hover::after{
+    width: 100%;
+}
+
+/* ------------------------- */
+
+.user{
+    font-family: 'Canter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    display: flex;
+}
+
+.logged-player{
+    text-decoration: none;
+
+}
+
+.logout-button,
+.logout-button-black{
+    background-color: #f7f7f7;
+    border: none;
+
+    margin-left: 15px;
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.logout-button-black{
+    background-color: black;
+    color: white;
+}
+
+.log-to-play{
+    margin-top: 35%;
+
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    font-family: 'Canter', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+    margin-top: 5%;
+    padding: 2% 0 2% 0;
+}
+
+.line,
+.line-first{
+    background-image: linear-gradient(to right, white, black 50%, white 100%);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+
+    height: 2px;
+    margin: 10% -10% 0 -10%;
+}
+
+.line-first{
+    margin-top: 15%;
+}
+
+.add-comment-logged{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    text-align: center;
+}
+
+.add-comment{
+    text-align: center;
+}
+
+.fa-react{
+    font-size: 24px;
+
+    color: rgba(59, 130, 246, 0.6);
+    position: absolute;
+    left: 15px;
+}
+
+.fa-user{
+    margin-right: 10px;
+}
+
+.react-stars{
+    display: flex;
+    justify-content: center;
+}
+
+.rate-game{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-top: 10%;
+
+    text-align: center;
+}
+
+.average-rating{
+    text-align: center;
+
+    margin-top: 15%;
+}
+
+.average-rating p{
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.average-rating-stars{
+    font-size: 24px;
+}

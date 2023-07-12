@@ -1,0 +1,240 @@
+.game-container{
+    margin-top: 35%;
+    text-align: -webkit-center;
+}
+
+.diff-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.new-game-button{
+    margin-bottom: 2%;
+}
+
+.random-button{
+    margin-left: 15px;
+}
+
+.button{
+    font-family: 'Canter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    background-color: #f7f7f7;
+    border-radius: 4px;
+
+    padding: 5px 10px 5px 10px;
+
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+
+    transition: .3s;
+}
+
+/* Field.js */
+.gamefield-table {
+    /*border: 2px solid #000;*/
+    border-spacing: 10px 5px;
+    border-collapse: separate;
+}
+
+td {
+    border: 3px solid rgba(0, 0, 0, 0.3);
+
+    border-radius: 6px;
+
+    width: 40px;
+    height: 40px;
+}
+
+
+
+tr:nth-child(3n+1) td {
+    border-top: 3px solid black ;
+}
+
+tr:nth-child(3n) td {
+    border-bottom: 3px solid black;
+}
+
+td:nth-child(3n+1) {
+    border-left: 3px solid black;
+}
+
+td:nth-child(3n) {
+    border-right: 3px solid black;
+}
+
+
+
+.gamefield-table .to_guess {
+    background-color: white;
+    cursor: pointer;
+}
+
+.gamefield-table .wrong_guess {
+    border: 3px solid darkred;
+    animation-name: color;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {
+        border: 3px solid white;
+    }
+    50% {
+        border: 3px solid darkred;
+    }
+    100% {
+        border: 3px solid white;
+    }
+}
+
+.actual-score{
+    font-size: 20px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.game-won{
+    position: absolute;
+    top: 80%;
+    font-size: 28px;
+    font-weight: 1000;
+
+    letter-spacing: 2px;
+
+    border: 1px solid rgba(139, 245, 130, 0.8);
+    background-color: rgba(139, 245, 130, 0.8);
+    border-radius: 8px;
+
+    width: 50%;
+    padding: 2% 0 2% 0;
+}
+
+.won-opacity{
+    opacity: 0.2;
+}
+
+.how-to-play{
+    margin-top: 5%;
+}
+
+.tutorial{
+    position: absolute;
+    width: 550px;
+    height: 500px;
+
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    background-color: #f7f7f7;
+
+    z-index: 1;
+
+    box-shadow: 3px 17px 88px 12px rgba(0,0,0,0.75);
+}
+
+.tutorial p{
+    text-align: left;
+}
+
+.tutorial button{
+    background-color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+li{
+    margin-top: 40px;
+}
+
+/* ColorMenu.js */
+
+.color-menu{
+    position: absolute;
+    display: flex;
+
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 5px;
+
+    box-shadow: -3px -1px 142px 200px rgba(255,255,255,0.86);
+}
+
+.color-menu div{
+    width: 40px;
+    height: 40px;
+
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+
+    margin-right: 3px;
+
+    transition: .3s;
+}
+
+.color-menu div:hover{
+    width: 48px;
+    height: 48px;
+
+    transition: .3s;
+}
+
+.\31 {
+    background-color: red;
+
+}
+
+.\32 {
+    background-color: yellow;
+}
+
+.\33 {
+    background-color: green;
+}
+
+.\34 {
+    background-color: cyan;
+}
+
+.\35 {
+    background-color: blue;
+}
+
+.\36 {
+    background-color: orange;
+}
+
+.\37 {
+    background-color: purple;
+}
+
+.\38 {
+    background-color: gray;
+}
+
+.\39 {
+    background-color: black;
+}
+
+
+
+
